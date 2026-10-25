@@ -1,0 +1,29 @@
+{
+  "name": "pi-rpc-lab",
+  "version": "0.1.0",
+  "description": "Pi RPC profitability lab: cost vs requests, latency/uptime benchmark, break-even. Tool only, no hosting. Testnet-first, no financial advice.",
+  "type": "module",
+  "bin": {
+    "pi-rpc-lab": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "dev": "tsx src/cli.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
